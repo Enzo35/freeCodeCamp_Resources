@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <title>HTML and CSS Basics</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h3>Navigation</h3>
+      </header>
+      <p><a class="nav-link" href="#Private">Private
+</a></p>
+      <p><a class="nav-link" href="#Default">Default
+</a></p>
+      <p><a class="nav-link" href="#Protected">Protected
+</a></p>
+      <p><a class="nav-link" href="#Public">Public
+</a></p>
+      <p><a class="nav-link" href="#Honorable_Mention">Honorable Mention
+</a></p>
+    </nav>
+    <main id="main-doc">
+      <h1>Access Modifires In JAVA</h1>
+      <p>An access modifier is used for attributes, methods and constructors to only make them accessible to a certain extent.</p>
+      <p>In this page I will be using 'attributes' as catch all term for classes, variables, methods and constructers</p>
+      <section id="Private" class="main-section">
+        <header>
+          <h2>Private</h2>
+        </header>
+        <p>This modifier makes that the attribute can only be accessed in the class it was created.</p>
+        <p>Uses the "private" keyword.</p>
+        <li><code>private class Main {}</code></li>
+        <br>
+        <li><code>private String var = "This string is a private attribute"</code></li>
+      </section>
+      <section id="Default" class="main-section">
+        <header>
+          <h2>Default</h2>
+        </header>
+        <p>This is an access modifier a level bellow the "protected" modifier.</p>
+        <p>In this modifier a attribute can be accessed only by members of the same package.</p>
+        <p>The default modifier does not have a keyword.</p>
+        <li><code>class Main {}</code></li>
+        <br>
+        <li><code>int year = 2010</code></li>
+      </section>
+      <section id="Protected" class="main-section">
+        <header>
+          <h2>Protected</h2>
+        </header>
+        <p>This is an access modifier a level bellow the "protected" modifier.</p>
+        <p>This is the same as the "default" modifier with the addition of child classes outside of the package are also given access to the attribute.</p>
+        <p>Uses the "protected" keyword.</p>
+        <li><code>protected string = "Protected String"</code></li>
+      </section>
+      <section id="Public" class="main-section">
+        <header>
+          <h2>Public</h2>
+        </header>
+        <p>A public attribute can be accessed by any other at any time.</p>
+        <p>Uses the "public" keyword.</p>
+        <li><code>public class Main {}</code></li>
+      </section>
+      <section id="Honorable_Mention" class="main-section">
+        <header>
+          <h2>Honorable Mention</h2>
+        </header>
+        <li>Static</li>
+        <p>Not a access modifier</p>
+        <p>The "static" keyword makes a atribute to be of the class, not the object. This means only one copy of it exists for the entire class, rather than each having its own copy.</p>
+        <p>Only static methods can access static atributes</p>
+      </section>
+    </main>
+  </body>
+</html>

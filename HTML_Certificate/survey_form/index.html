@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF_8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Survey Form Project to the Responsive Web Design Course</p>
+    <form id="survey-form" method="post">
+      <fieldset id="user-information">
+        <legend>Your Information</legend>
+        <label id="name-label" for="name">Enter name: <input id="name" type="text" class="information" placeholder="Please, enter your name." required/></label>
+        <label id="email-label" for="email">Enter email: <input id="email" type="email" class="information" placeholder="Please, enter your email." required/></label>
+        <label id="number-label" for="number">Age: <input id="number" type="number" class="information" min="18" max="120" placeholder="Please, enter your age." /></label>
+        <label>What is your current role: 
+          <select id="dropdown" class="information">
+            <option id="student" value="1">Student</option>
+            <option id="full_time_job" value="2">Full Time Job</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset id="site-evaluation">
+        <legend>Site Evaluation</legend>
+        <fieldset>
+          <legend>Would you recommend freecodecamp?</legend>
+          <label id="recommendation_negative"><input id="recommendation_negative" name="recommendation" type="radio" value="0" class="inline" /> No</label>
+          <label id="recommendation_positive"><input id="recommendation_positive" name="recommendation" type="radio" value="1" class="inline" /> Yes</label>
+        </fieldset>
+        <fieldset>
+          <legend>What did you like?</legend>
+          <label><input type="checkbox" value="1" class="inline" /> The Courses</label>
+          <label><input type="checkbox" value="2" class="inline" /> The Forum</label>
+          <label><input type="checkbox" value="3" class="inline" /> The News</label>
+          <label><input type="checkbox" value="4" class="inline" /> The Radio</label>
+        </fieldset>
+        <label id="comments" for="comments">Comments:
+           <textarea id="comments" cols="60" rows="3"></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
